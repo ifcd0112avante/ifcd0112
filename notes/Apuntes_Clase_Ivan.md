@@ -1,7 +1,7 @@
 ---
-title: Apuntes_Clase
+title: Apuntes_Clase_Ivan
 created: '2025-06-24T08:49:52.694Z'
-modified: '2025-06-24T10:19:23.129Z'
+modified: '2025-06-24T10:57:26.074Z'
 ---
 
 # 📘 Apuntes Clase
@@ -26,5 +26,7 @@ modified: '2025-06-24T10:19:23.129Z'
 3️⃣ Instalar extensiones:  
    - 🌍 **Spanish**  
    - 📦 **Extension Pack for Java** (Microsoft)
-   - **Extension Markdown** 
+   - **Extension Markdown**
+
+
    
