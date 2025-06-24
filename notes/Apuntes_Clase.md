@@ -1,3 +1,9 @@
+---
+title: Apuntes_Clase
+created: '2025-06-24T08:49:52.694Z'
+modified: '2025-06-24T10:19:23.129Z'
+---
+
 # 📘 Apuntes Clase
 
 ## ☕🖥️ Instalar Java y VSC
@@ -19,4 +25,6 @@
 2️⃣ Descargar `System Installer x64`  
 3️⃣ Instalar extensiones:  
    - 🌍 **Spanish**  
-   - 📦 **Extension Pack for Java** (Microsoft)  
+   - 📦 **Extension Pack for Java** (Microsoft)
+   - **Extension Markdown** 
+   
