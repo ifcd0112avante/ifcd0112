@@ -1,10 +1,24 @@
 ---
 title: Apuntes_Clase_Ivan
 created: '2025-06-24T08:49:52.694Z'
-modified: '2025-06-24T12:25:08.718Z'
+modified: '2025-06-27T11:42:03.248Z'
 ---
 
 # 📘 Apuntes Clase
+
+- [📘 Apuntes Clase](#-apuntes-clase)
+  - [☕🖥️ Instalar Java y VSC](#️-instalar-java-y-vsc)
+    - [☕ Instalar Java](#-instalar-java)
+    - [🧑‍💻 Instalar Visual Studio Code (VSC)](#-instalar-visual-studio-code-vsc)
+  - [GIT](#git)
+    - [Listado de comandos](#listado-de-comandos)
+      - [Ramas GIT](#ramas-git)
+  - [Roles Proyectos](#roles-proyectos)
+  - [HTML](#html)
+    - [Etiquetas HTML](#etiquetas-html)
+    - [Atributos HTML](#atributos-html)
+    - [Validador HTML](#validador-html)
+
 
 ## ☕🖥️ Instalar Java y VSC
 
@@ -27,6 +41,8 @@ modified: '2025-06-24T12:25:08.718Z'
    - 🌍 **Spanish**  
    - 📦 **Extension Pack for Java** (Microsoft)
    - **Extension Markdown**
+   - Markdown All in One
+     - F1 > markdown all in one: create table of contents
 
 ## GIT
 
@@ -74,9 +90,31 @@ Analista  +5k
 Consultor +5-8k
 Arquitecto +10-15k
 
+## HTML
+
+### Etiquetas HTML
+
+- html (1) 
+- head (1) -> Cabeceras
+- body (1) -> Cuerpo (se ve)
+  - p (2) -> párrafo
+  - h1...h6 (2) -> Secciones
+    - string (3) -> Negrita
+    - em (3) -> Cursiva
+    - ins (3) -> Subrayado
+    - del (3) -> Tachado
 
 
+### Atributos HTML
 
+- id -> identificado único
+- class -> Clase (se puede repetir)
+- style -> Formato (CSS en línea)
+
+### Validador HTML
+
+https://validator.w3.org/
+- File Upload
 
 
 
