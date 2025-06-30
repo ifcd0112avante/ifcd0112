@@ -1,7 +1,7 @@
 ---
 title: Apuntes_Clase_Ivan
 created: '2025-06-24T08:49:52.694Z'
-modified: '2025-06-27T11:42:03.248Z'
+modified: '2025-06-30T08:55:53.355Z'
 ---
 
 # 📘 Apuntes Clase
@@ -103,7 +103,14 @@ Arquitecto +10-15k
     - em (3) -> Cursiva
     - ins (3) -> Subrayado
     - del (3) -> Tachado
-
+  - blockquote (2) -> cita
+    - sup (3) -> Superindice
+    - sub (3) -> Subindice
+  - abbr -> Acrónimos o abreviaturas
+  - span (3) -> Fragmento de texto
+  - dfn (3) -> Definición
+  - br (3) -> Salto de línea
+  - pre (2) -> texto preformateado
 
 ### Atributos HTML
 
