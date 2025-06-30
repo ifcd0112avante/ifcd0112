@@ -1,7 +1,7 @@
 ---
 title: Apuntes_Clase_Ivan
 created: '2025-06-24T08:49:52.694Z'
-modified: '2025-06-30T08:55:53.355Z'
+modified: '2025-06-30T09:47:00.524Z'
 ---
 
 # 📘 Apuntes Clase
@@ -111,6 +111,8 @@ Arquitecto +10-15k
   - dfn (3) -> Definición
   - br (3) -> Salto de línea
   - pre (2) -> texto preformateado
+  - code (2) -> Código (semántico)
+  
 
 ### Atributos HTML
 
