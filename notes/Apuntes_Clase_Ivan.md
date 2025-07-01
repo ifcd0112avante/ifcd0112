@@ -1,7 +1,7 @@
 ---
 title: Apuntes_Clase_Ivan
 created: '2025-06-24T08:49:52.694Z'
-modified: '2025-06-30T09:47:00.524Z'
+modified: '2025-07-01T10:52:01.277Z'
 ---
 
 # 📘 Apuntes Clase
@@ -112,7 +112,33 @@ Arquitecto +10-15k
   - br (3) -> Salto de línea
   - pre (2) -> texto preformateado
   - code (2) -> Código (semántico)
-  
+
+  - ul (2) -> lista sin ordenar
+  - ol (2) -> lista ordenada
+    - li (3) -> Elemento de lista
+  ```html
+  <!-- Emmet: ul>li*5{Elemento 1.$} -->
+    <ul>
+        <li>Elemento 1.1</li>
+        <li>Elemento 1.2</li>
+        <li>Elemento 1.3</li>
+        <li>Elemento 1.4</li>
+        <li>Elemento 1.5</li>
+    </ul>
+  ```
+
+  - img (2) -> Imágenes
+  - map (2) -> Mapas de imágenes
+    - area (3) -> Define área de imagen
+  - table (2) -> Tablas
+    - caption (3) -> Titulo tabla
+    - tr (3) -> Fila 
+      - th (4) -> Celda cabecera
+      - td (4) -> celda
+    - thead (3) -> Filas cabecera (sem)
+    - tbody (3) -> Filas cuerpo (sem)
+    - tfoot (3) -> filas pie (sem)
+
 
 ### Atributos HTML
 

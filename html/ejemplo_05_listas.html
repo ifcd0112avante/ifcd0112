@@ -1,0 +1,70 @@
+<!-- ejemplo_05_listas.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h2>Listas sin ordenar</h2>
+    <!-- Emmet: ul>li*5{Elemento 1.$} -->
+    <ul>
+        <li>Elemento 1.1</li>
+        <li>Elemento 1.2</li>
+        <li>Elemento 1.3</li>
+        <li>Elemento 1.4</li>
+        <li>Elemento 1.5</li>
+    </ul>
+
+    <h2>Lista ordenada</h2>
+    <!-- Emmet: ol>li*4{Apartado2.$} -->
+    <ol>
+        <li>Apartado2.1</li>
+        <li>Apartado2.2</li>
+        <li>Apartado2.3</li>
+        <li>Apartado2.4</li>
+    </ol>
+
+    <h2>Listas Anidadas</h2>
+    <!-- Menú navegación https://www.us.es/
+    1) ul>li*7{Texto $}
+    2) Investigar: 3er elemento
+    la lista anidada va en el CONTENIDO
+        ol>li*9{Sublista $}
+    -->
+    <ul>
+        <li>Texto 1</li>
+        <li>Texto 2</li>
+        <li>Texto 3
+            <ol>
+                <li>Sublista 1</li>
+                <li>Sublista 2</li>
+                <li>Sublista 3</li>
+                <li>Sublista 4</li>
+                <li>Sublista 5</li>
+                <li>Sublista 6</li>
+                <li>Sublista 7</li>
+                <li>Sublista 8</li>
+                <li>Sublista 9</li>
+            </ol>
+        </li>
+        <li>Texto 4</li>
+        <li>Texto 5</li>
+        <li>Texto 6</li>
+        <li>Texto 7</li>
+    </ul>
+
+    <h2>Listas Anidadas con 1emmet</h2>
+    <!-- Menú navegación (3 elementos) https://www.us.es/
+     1er submenu -> 8 elementos
+     2º submenu -> 11 elementos
+     3er submenu -> 9 elementos
+     ul>(li>ol>li*8)+(li>ol>li*11)+(li>ol>li*9)
+    -->
+
+</body>
+
+</html>
