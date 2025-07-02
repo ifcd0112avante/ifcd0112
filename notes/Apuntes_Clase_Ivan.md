@@ -1,7 +1,7 @@
 ---
 title: Apuntes_Clase_Ivan
 created: '2025-06-24T08:49:52.694Z'
-modified: '2025-07-01T10:52:01.277Z'
+modified: '2025-07-02T11:40:52.280Z'
 ---
 
 # 📘 Apuntes Clase
@@ -19,10 +19,24 @@ modified: '2025-07-01T10:52:01.277Z'
     - [Atributos HTML](#atributos-html)
     - [Validador HTML](#validador-html)
 
+## Arranque dual
+- Los SO son independientes
+- El gestor de arranque de linux: Grub
+- El gestor de arranque de Win: MBR
+- Windows versión: 11 Pro/Home
+- Linux distribución: Mint Cinnamon
+  -> Ubuntu -> Debian 
+  Nucleos: GNU/Linux -> Unix
+
+## IDEs
+- Para MarkDown: Notable
+- Para código: Visual Studio Code
+- Oficial Java: Apache Netbeans
 
 ## ☕🖥️ Instalar Java y VSC
 
 ### ☕ Instalar Java  
+- LTS -> Soporte extendido
 1️⃣ Ir a [🔗 Oracle Java](https://www.oracle.com/es/java/technologies/downloads/)  
 2️⃣ Descargar versión *LTS (21)*  
 3️⃣ Configurar **variables de entorno**  
@@ -31,8 +45,25 @@ modified: '2025-07-01T10:52:01.277Z'
      *(📁 Panel de Control > 🖥️ Sistema > ⚙️ Configuración avanzada del sistema > 🌐 Variables de entorno)*  
    - 🧬 Variables de Entorno  
    - 🛣️ `Path` (del sistema): `C:\Program Files\Java\jdk-21`
-
 ---
+
+## Comandos de Consola
+### Windows (MS-DOS/Powershell)
+- cmd -> iniciar consola
+- dir -> ver directorio
+- cd -> Cambiar directorio 
+- cd.. -> subir nivel directorio
+- cls -> limpia consola
+
+### Linux
+- clear -> limpia consola
+- sudo -> privilegios superusuario
+- apt update -> Actualizar repositorios
+- apt upgrade -> Actualizar aplicaciones
+- apt install paquete -> Instalar paquete
+- mkdir -> crear directorio
+- ls -> lista directorio (ls -la)
+- pwd -> Ruta actual
 
 ### 🧑‍💻 Instalar Visual Studio Code (VSC)  
 1️⃣ Ir a [🔗 VS Code Download](https://code.visualstudio.com/download#)  
@@ -139,17 +170,30 @@ Arquitecto +10-15k
     - tbody (3) -> Filas cuerpo (sem)
     - tfoot (3) -> filas pie (sem)
 
-
+  - form (2) -> formulario (post|get)
+    - fieldset (3) -> Recuadro 
+    - label+input -> Asociamos etiqueta con campo (for->id)
+      - name -> nombre variable
+    - input (3-4)
+      - text, password, date, number, email, tel, submit, reset
+      - Atributos: required (obligatorio), placeholder (texto ayuda), value (valor inicial), min, max, 
+    - textarea -> área texto (rows-filas y cols-caracteres por fila)
 ### Atributos HTML
 
 - id -> identificado único
 - class -> Clase (se puede repetir)
 - style -> Formato (CSS en línea)
 
-### Validador HTML
+### Validadores HTML y CSS
 
-https://validator.w3.org/
-- File Upload
+HTML -> https://validator.w3.org/
+CSS -> https://jigsaw.w3.org/css-validator/
+
+## Virtualización
+- Oracle VirtualBox v7
+  sudo apt install virtualbox (7.0.16)
+- VMWare
+
 
 
 
