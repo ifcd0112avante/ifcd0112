@@ -1,7 +1,7 @@
 ---
 title: "\U0001F4D8 Apuntes Clase Iván"
 created: '2025-07-02T12:29:52.741Z'
-modified: '2025-07-03T07:13:04.675Z'
+modified: '2025-07-03T11:40:02.995Z'
 ---
 
 # 📘 Apuntes Clase
@@ -202,10 +202,13 @@ Flechas: → , ← , ↑ , ↓ , ↗ , ↖ , ↘ , ↙
 > Etiquetas semánticas. Resto de etiquetas aumentan un nivel...
 - `header` → (2) Cabecera de página
 - `nav` → (2) Navegación
+- `main` → (2) Zona principal
 - `aside` → (2) Lateral
 - `section` → (2) Sección
 - `article` → (2) Contenido
+> IMPORTANTE: Todos los section y article deben tener un h2...h6 o en su defecto un atributo aria-label
 - `figure` → (2) Sección multimedia
+  - `figcaption` → (3) Pie
 - `footer` → (2) pie
 
 ### ⚙️ Atributos HTML
@@ -216,6 +219,19 @@ Flechas: → , ← , ↑ , ↓ , ↗ , ↖ , ↘ , ↙
 ### ✅ Validadores HTML y CSS
 - HTML → [https://validator.w3.org/](https://validator.w3.org/)  
 - CSS → [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/)  
+
+---
+
+## CSS
+
+- https://csszengarden.com/
+
+### Incluir CSS
+1. CSS en línea
+2. CSS en la cabecera (style)
+3. CSS externo (link)
+- `footer` → (2) pie
+
 
 ---
 
