@@ -1,3 +1,9 @@
+---
+title: "\U0001F4D8 Apuntes Clase Iván"
+created: '2025-07-02T12:29:52.741Z'
+modified: '2025-07-03T07:13:04.675Z'
+---
+
 # 📘 Apuntes Clase
 
 - [📘 Apuntes Clase](#-apuntes-clase)
@@ -135,10 +141,29 @@ Pasos:
 ## 🌐 HTML
 
 ### 🏷️ Etiquetas HTML
-- `html`, `head`, `body`  
-- `p`, `h1`...`h6`, `strong`, `em`, `ins`, `del`  
-- `blockquote`, `sup`, `sub`, `abbr`, `span`, `dfn`, `br`, `pre`, `code`  
-- `ul`, `ol`, `li`  
+Flechas: → , ← , ↑ , ↓ , ↗ , ↖ , ↘ , ↙
+- `html` → (1) general
+- `head` → (1) Cabeceras
+- `body` → (1) Cuerpo
+  - `h1`...`h6` → (2) secciones
+  - `p` → (2) Párrafos
+    - `strong` → (3) Negrita 
+    - `em` → (3) Cursiva
+    - `ins`→ (3) Subrayado 
+    - `del` → (3) tachado  
+    - `span`→ (3) fragmento texto 
+  - `blockquote` → (2) Cita
+    - `sup` → (3) Superindice
+    - `sub`→ (3) subindice
+  - `abbr` → (2) Abreviatura 
+  - `dfn` → (2) Lista definición 
+    - `br`→ (3) Salto de líbea 
+  - `pre` → (2) Texto preformateado
+  - `code` → (2) Código
+
+- `ul`→ (2) Lista sin ordenar
+- `ol` → (2) Lista ordenada
+  - `li` → (3) Elemento de lista
 
 ```html
 <!-- Emmet: ul>li*5{Elemento 1.$} -->
@@ -151,11 +176,37 @@ Pasos:
 </ul>
 ```
 
-- `img`, `map`, `area`  
-- `table`, `caption`, `tr`, `th`, `td`, `thead`, `tbody`, `tfoot`  
-- `form`, `fieldset`, `label`, `input`, `textarea`  
-  - Tipos: text, password, date, number, email, tel, submit, reset  
+- `img` → (2) Imagen
+- `map` → (2) Mapa de imágenes
+  - `area` → (3) Área (Circulo, polígono, rectángulo) 
+
+- `table` → (2) Tabla 
+  - `caption`→ (3) Titulo
+  - `thead`→ (3)[Sem] Cabecera tabla
+  - `tbody`→ (3)[Sem] Cuerpo
+  - `tfoot` → (3)[Sem] Pie tabla
+    - `tr` → (3-4) Fila
+      - `th` → (4-5) Celda cabecera
+      - `td`→ (4-5) Celda
+ 
+- `form` → (2) Formulario 
+  (Post|Get), encriptado o por URL
+  - `fieldset`→ (3) Recuadro
+    - `legend` → (4) Titulo recuadro
+    - `label`→ (4) Etiqueta de campo
+    - `input`→ (4) Campo
+    - `textarea` → (4) Área de texto 
+  - Tipos Inputs: text, password, date, number, email, tel, submit, reset  
   - Atributos: required, placeholder, value, min, max  
+
+> Etiquetas semánticas. Resto de etiquetas aumentan un nivel...
+- `header` → (2) Cabecera de página
+- `nav` → (2) Navegación
+- `aside` → (2) Lateral
+- `section` → (2) Sección
+- `article` → (2) Contenido
+- `figure` → (2) Sección multimedia
+- `footer` → (2) pie
 
 ### ⚙️ Atributos HTML
 - `id` → identificador único  

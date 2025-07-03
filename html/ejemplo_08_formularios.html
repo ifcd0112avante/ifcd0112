@@ -13,6 +13,7 @@
     ejemplo_08_formularios.html?usuario=usu1&clave=1234&fechanac=2025-07-02#-->
     <form action="#" method="post" enctype="multipart/form-data">
         <fieldset>
+            <legend>Datos básicos</legend>
             <!-- Emmet: label+input:text 
              for->id y el name->variable -->
             <label for="usuario">Usuario:</label>
@@ -35,7 +36,8 @@
             <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea><br>
             <!-- label+select>option*5 -->
             <label for="prov">Provincia:</label>
-            <select name="prov" id="prov">
+            <!-- Si la lista permite varias opciones: multiple -->
+            <select name="prov" id="prov" >
                 <option disabled selected>Elije provincia</option>
                 <optgroup label="Andalucia">
                     <option value="se">Sevilla</option>
