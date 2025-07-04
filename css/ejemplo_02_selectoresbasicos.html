@@ -1,0 +1,45 @@
+<!-- ejemplo_02_selectoresbasicos.html -->
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Basicos</title>
+    <style>
+        /*Formateamos la página - Reset CSS página informacion sobre reseteo- */
+        * {
+            margin: 5px;
+            padding: 5px; /*padding = relleno*/
+
+        }
+        /*Selector tipo etiqueta*/
+        p {
+            color: blue;
+        }
+        /*Varias etiquetas usamos "," */
+        h1, p {
+            font-size: x-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /*Selector Descendente*/
+        p span {
+            color: red;
+        }
+        p span a {
+            text-decoration: none;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="estilos.css">-->
+</head>
+<body>
+    <h1>Selectores Basicos CSS :</h1>
+    <p>Parrafo 1 con <a href="#">Enlace</a></p>
+    <p>Parrafo 2</p>
+    <p>Parrafo 3</p>
+    <span>Fragmento 1 con <a href="#">Enlace 1</a></span><br>
+    <p>Párrafo 4 con <span>fragmento 2 con <a href="#">Enlace 2</a></span></p>
+
+</body>
+</html>

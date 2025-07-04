@@ -1,0 +1,76 @@
+<!-- ejemplo_04_selectoresavanzados.html 
+CTRL + K y CTRL + C 
+Pág 29 Manual CSS -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Avanzados</title>
+    <style>
+        /* (.) Espacio es selector descendente */
+        p a {
+            text-decoration: none;
+        }
+
+        /* Selector Hijo (>)*/
+        p > a {
+            color: red;
+        }
+
+        /* Selector hermano/s (+) - Adyacente */
+        p + p a {
+            color: green;
+        }
+
+        /* Selector atributo */
+        section[aria-label="parrafo7-8"] {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- familia1 con 4p hermanos -->
+    <p>Párrafo1 con un 
+        <a href="#">enlace</a>
+    </p>
+    <p>Párrafo2 con un 
+        <span>fragmento con un 
+            <a href="#">enlace</a>
+        </span> 
+    </p>
+    <p>Párrafo3 con un 
+        <a href="#">enlace</a>
+    </p>
+    <p>Párrafo4 con un 
+        <span>fragmento con un 
+            <a href="#">enlace</a>
+        </span> 
+    </p>
+
+    <!-- familia2 con 2p hermanos -->
+    <section aria-label="parrafo5-6">
+        <p>Párrafo5 con un 
+            <a href="#">enlace</a>
+        </p>
+        <p>Párrafo6 con un 
+            <span>fragmento con un 
+                <a href="#">enlace</a>
+            </span> 
+        </p>
+    </section>
+
+    <!-- familia3 con 2p hermanos -->
+    <section aria-label="parrafo7-8">
+        <p>Párrafo7 con un 
+            <a href="#">enlace</a>
+        </p>
+        <p>Párrafo8 con un 
+            <span>fragmento con un 
+                <a href="#">enlace</a>
+            </span> 
+        </p>
+    </section>
+
+</body>
+</html>
