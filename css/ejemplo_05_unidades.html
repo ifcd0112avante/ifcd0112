@@ -1,0 +1,72 @@
+<!-- ejemplo_05_unidades.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medida</title>
+    <style>
+        /* Unidades absolutas: mm, pt, pc */
+        table,
+        th,
+        td {
+            border: 1pt solid blue;
+        }
+
+        /* Unidades relativas: em, ex, px, % */
+        tr+tr+tr td+td {
+            font-size: 2em;
+            /*1em ~ 14px */
+        }
+
+        th {
+            font-size: 4ex;
+        }
+
+        caption {
+            font-size: 28px;
+        }
+
+        th+th {
+            width: 40%;
+        }
+
+        /* Colores*/
+        th {
+            background-color: cyan; /*clave*/
+        }
+
+        caption {
+            color: rgb(255, 0, 255); /*rgb decimal*/
+            background-color: #FFFF00; /*hexadecimal*/
+        }
+
+        table {
+            background-color: rgb(80%, 100%, 100%); /*rgb porcentaje*/
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Titulo de tabla</caption>
+        <tr>
+            <th>columna 1</th>
+            <th>columna 2</th>
+            <th>columna 3</th>
+        </tr>
+        <tr>
+            <td>celda 1</td>
+            <td>celda 2</td>
+            <td>celda 3</td>
+        </tr>
+        <tr>
+            <td>celda 1</td>
+            <td>celda 2</td>
+            <td>celda 3</td>
+        </tr>
+    </table>
+</body>
+
+</html>
