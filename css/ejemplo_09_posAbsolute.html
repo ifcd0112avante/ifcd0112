@@ -1,0 +1,55 @@
+<!-- ejemplo_09_posAbsolute.html -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento Absoluto</title>
+    <style>
+        /* Posicionamiento Absoluto: 
+        position: absolute, salimos del flujo
+        y posicionamos respecto a NUESTRO contenedor*/
+
+        main {
+            border: 5px solid blue;
+            width: 800px;
+            height: 600px;
+            position: relative;
+            top: 150px;
+            left: 20px;
+        }
+
+        section {
+            border: 5px solid red;
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em;
+            border: 5px solid green;
+            margin: 20px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        p:nth-of-type(2) {
+            top: 150px;
+        }
+        
+    </style>
+ </head>
+ <body>
+    <main>
+        <section aria-label="deportes">
+            <p>Noticias de la selección española de fútbol femenino 1</p>
+            <p>Noticias de la selección española de fútbol femenino 2</p>
+        </section>
+    </main>
+ </body>
+ </html>

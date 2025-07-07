@@ -1,0 +1,73 @@
+<!-- ejemplo_10_posFlotante.html -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento Flotante</title>
+    <style>
+        /* Posicionamiento flotante: 
+        float: left | right
+        clear: left | right | both
+        Visualización de cajas y contenedores:
+        visibility: visivilidad
+        display: mostrar
+        */
+
+        main {
+            border: 2px solid red;
+            margin: 20px;
+            height: 400px;
+        }
+
+        section {
+            margin: 30px;
+            width: 20%;
+            visibility: visible;
+        }
+
+        section[aria-label="izq"] {
+            border: 2px solid blue;
+            float: left;
+            /*Oculto la sección*/
+            /* visibility: hidden;  */
+
+            /* Quito la sección */
+            /* display: none; */
+        }
+
+        section[aria-label="cen"] {
+            border: 2px solid green;
+            float: left;
+            margin-left: 80px;
+        }
+
+        section[aria-label="der"] {
+            border: 2px solid violet;
+            float: right;
+        }
+
+        p {
+            margin: 30px;
+            background-color: aqua;
+            padding: 5px;
+        }
+
+        
+
+    </style>
+ </head>
+ <body>
+    <main>
+        <section aria-label="izq">
+            <p>Párrafo izquierda</p>
+        </section>
+        <section aria-label="cen">
+            <p>Párrafo central</p>
+        </section>
+        <section aria-label="der">
+            <p>Párrafo derecha</p>
+        </section>
+    </main>
+ </body>
+ </html>

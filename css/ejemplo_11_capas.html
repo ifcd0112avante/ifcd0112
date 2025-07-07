@@ -1,0 +1,52 @@
+<!-- ejemplo_11_capas.html -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desbordamiento y Capas</title>
+    <style>
+        /* Relleno de texto:
+        - https://www.lipsum.com/ */
+        /* overflow: desbordamiento contenido 
+        z-index: define niveles de capas */
+        main {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+        }
+
+        p { 
+            border: 2px solid blue;
+            padding: 20px;
+            margin: 10px
+        }
+
+        p:nth-of-type(1) {
+            background-color: beige;
+            width: 400px;
+            height: 200px;
+            overflow: scroll;
+            position: relative;
+            top: 200px;
+            z-index: 2;
+        }
+
+        p:nth-of-type(2) {
+            background-color: honeydew;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+ </head>
+ <body>
+    <main>
+        <p>
+            Sevilla es un municipio y una ciudad de España, capital de la provincia homónima y de Andalucía.[6]​ Con una población de 687 488 habitantes (INE 2024), por lo que es la ciudad más poblada de Andalucía y la cuarta de España según los datos oficiales del INE.[7]​ El municipio tiene una superficie de 141,4 km².[8]​ El área metropolitana de Sevilla está compuesta por 46 municipios, incluye a una población de 1 548 741 habitantes (INE 2020) y ocupa una superficie de 4905,04 km².[9]​ Sevilla, al disponer de su Real Alcázar, es una de las cuatro ciudades donde la familia real española tiene residencia oficial, junto con Madrid, Barcelona y Palma.
+        </p>
+        <p>
+            Su casco antiguo, con 3,9 km²,[10]​ es el más extenso de España y el sexto más grande de Europa, tras los de Roma (14,6 km²),[11]​ Nápoles (10,3 km²),[12]​ Venecia (7,6 km²),[13]​ Florencia (5,5 km²)[14]​ y Génova (4,1 km²).[15]​ Sevilla es una de las ciudades con más monumentos catalogados en Europa. Su casco histórico es uno de los mayores de España.[10]​ Su patrimonio histórico y monumental y sus diversos espacios escénicos y culturales la constituyen en ciudad receptora de turismo nacional e internacional. Es la tercera ciudad de España en ocupación hotelera tras Barcelona y Madrid.[16]​ Entre sus monumentos más representativos se encuentran la catedral (que incluye la Giralda), el Alcázar, el Archivo de Indias y la Torre del Oro, los tres primeros declarados Patrimonio de la Humanidad por la Unesco en 1987.[17]​
+        </p>
+        
+    </main>
+ </body>
+ </html>
