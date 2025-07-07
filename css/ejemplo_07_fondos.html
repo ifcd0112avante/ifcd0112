@@ -1,0 +1,39 @@
+<!-- ejemplo_07_fondos.html -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondos</title>
+    <style>
+        body {
+            /* background-image: url(img/matrix-code.gif); */
+            background-image: url(img/trama.jpg);
+            background-size: 100px 100px;
+            background-repeat: repeat-y;
+            background-position: top right;
+            background-attachment: fixed;
+            
+            /* Propiedades nuevas CSS3 
+            background-clip: Define hasta donde se extiende el fondo -> background-repeat 
+            background-blend-mode: mezcla entre fondo y contenido -> background-attachment */
+        }
+    </style>
+ </head>
+ <body>
+    <!-- Emmet: p[id=p$]*3{párrafo $} -->
+    <p id="p1">El modelo de cajas o "box model" es seguramente la característica más importante del lenguaje de
+        hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas
+        es el comportamiento de CSS que hace que todos los elementos de las páginas se representen
+        mediante cajas rectangulares</p>
+    <p id="p2">Las cajas de una página se crean
+        automáticamente. Cada vez que se inserta una
+        etiqueta HTML, se crea una nueva caja
+        rectangular que encierra los contenidos de ese elemento. La imagen superior muestra las tres
+        cajas rectangulares que crean las tres etiquetas HTML que incluye la página</p>
+    <p id="p3">Los navegadores crean y colocan las cajas de
+        forma automática, pero CSS permite modificar
+        todas sus características.</p>
+    <h2>Titulo</h2>
+ </body>
+ </html>

@@ -30,11 +30,33 @@
             height: 30px;
             padding: 50px;
         }
+
+        /* Vamos a definir reglas para cada párrafo individual */
+        /* Primer párrafo */
+        p:nth-of-type(1) {
+            background-color: aquamarine;
+        }
+
+        /* Segundo párrafo */
+        p:nth-of-type(2) {
+            background-color:lavenderblush;
+            margin-bottom: 100px;
+            border-bottom-width: 15px;
+            border-bottom-color: brown;
+            border-style: groove;
+        }
+
+        /* Tercer párrafo */
+        p:nth-of-type(3) {
+            background-color: pink;
+            margin-top: 150px;
+            padding-top: 120px;
+        }
     </style>
 </head>
 
 <body>
-    <!-- p[id=p$]*3{párrafo $} -->
+    <!-- Emmet: p[id=p$]*3{párrafo $} -->
     <p id="p1">El modelo de cajas o "box model" es seguramente la característica más importante del lenguaje de
         hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas
         es el comportamiento de CSS que hace que todos los elementos de las páginas se representen
