@@ -1,0 +1,84 @@
+<!-- ejemplo_14_enlaces_listas.html -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces y listas</title>
+    <style>
+        /* Pseudo-clase para enlaces: 
+        :link -> no se ha pulsado 
+        :visited -> cuando se ha pulsado
+        :hover -> ratón por encima (se aplica a otros elementos!) 
+        :active -> gestor de pulsar (se aplica a otros elementos!) */
+    
+        p:hover {
+            border: 1px solid blue;
+        }
+
+        p:active {
+            background-color: aquamarine;
+        }
+
+        a:link {
+            background-color: lightcyan;
+            color: white;
+            font-weight: 800;
+            text-decoration: none;
+            padding: 2px;
+        }
+
+        a:visited {
+            color: cyan;
+        }
+
+        /* Propiedades para listas:  
+        - list-style-type: estilo de lista 
+        - list-style-position: posición
+        - list-style-image: personalizar la viñeta
+        */
+
+        ul {
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+
+        hr {
+            border: 2px solid orange;
+            width: 30px;
+        }
+
+        ol {
+            list-style-type: none;
+        }
+
+        ol li::before {
+            content: "😀";
+            margin-right: 1em;
+        }
+
+    </style>
+ </head>
+ <body>
+    <main>
+        <p>Esto es un párrafo con <br>
+        enlace a <a href="https://www.mc-mutual.com/">
+            <img src="https://tinyurl.com/54svjtz6" 
+            alt="MC-Mutual" width="50px">
+            MC-Mutual</a>
+        </p>
+        <!-- ul>li*3{elemento $} -->
+         <ul>
+            <li>elemento 1</li>
+            <li>elemento 2</li>
+            <li>elemento 3</li>
+         </ul>
+         <hr>
+         <ol>
+            <li>apartado 1</li>
+            <li>apartado 2</li>
+            <li>apartado 3</li>
+         </ol>
+    </main>
+ </body>
+ </html>

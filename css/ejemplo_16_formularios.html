@@ -1,0 +1,132 @@
+<!-- ejemplo_08_formularios.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        /* Algunas propiedades nuevas (y valores)
+        - display: inline-block (bloques en línea
+        - border-radius (CSS3): bordes redondeados 
+        */
+        input[required] {
+            background-color: lightsalmon;
+        }
+
+        fieldset:nth-of-type(1) label {
+            display: inline-block;
+            width: 200px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        fieldset:nth-of-type(1) input {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        fieldset:nth-of-type(2) label {
+            display: inline-block;
+            width: 200px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        fieldset:nth-of-type(2) input {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+
+        input:focus {
+            background-color: aquamarine;
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Al mandar el primer fieldset, sale esto con GET
+    ejemplo_08_formularios.html?usuario=usu1&clave=1234&fechanac=2025-07-02#-->
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <!-- Emmet: label+input:text 
+             for->id y el name->variable -->
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="usuario" 
+                placeholder="Usuario web" required="required"><br>
+            <label for="clave">Contraseña:</label>
+            <input type="password" name="clave" id="clave"><br>
+            <label for="fechanac">Nacimiento:</label>
+            <input type="date" name="fechanac" id="fechanac" value="2025-07-01"><br>
+        </fieldset>
+        <fieldset>
+            <label for="codpostal">Código Postal:</label>
+            <input type="number" name="codpostal" id="codpostal" min="01000" max="52010"><br>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" name="correo" id="correo" 
+                required="required"><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono"><br>
+        </fieldset>
+        <fieldset>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea><br>
+            <!-- label+select>option*5 -->
+            <label for="prov">Provincia:</label>
+            <!-- Si la lista permite varias opciones: multiple -->
+            <select name="prov" id="prov" >
+                <option disabled selected>Elije provincia</option>
+                <optgroup label="Andalucia">
+                    <option value="se">Sevilla</option>
+                    <option value="gr">Granada</option>
+                    <option value="ca">Cádiz</option>
+                </optgroup>
+                <option value="ba">Badajoz</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <!-- (input:radio+label)*2 -->
+             <p>Seleccione Género:</p>
+             <input type="radio" name="genero" id="mujer" 
+             value="mujer" checked="checked">
+             <label for="mujer">mujer</label><br>
+             <input type="radio" name="genero" id="hombre" value="hombre">
+             <label for="hombre">hombre</label><br>
+
+             <p>Intereses</p>
+             <!-- (input:checkbox+label)*3 -->
+              <input type="checkbox" name="intereses[]" id="deporte" value="deporte">
+              <label for="deporte">deporte</label><br>
+              <input type="checkbox" name="intereses[]" id="informatica" value="informatica">
+              <label for="informatica">informatica</label><br>
+              <input type="checkbox" name="intereses[]" id="musica" 
+              value="musica" checked="checked">
+              <label for="musica">musica</label><br>
+        </fieldset>
+        <fieldset>
+            <label for="color">Color de usuario</label>
+            <input type="color" name="color" id="color"
+            value="#FF0000"><br>
+            <!-- Para cargar archivos en el form 
+            se pone enctype="multipart/form-data" -->
+            <label for="cv">CV</label>
+            <input type="file" name="cv" id="cv"><br>
+            <input type="hidden" name="hash" value="1234">
+        </fieldset>
+        <hr>
+        <input type="submit" value="Enviar"><br>
+        <input type="reset" value="Borrar datos">
+    </form>
+</body>
+
+</html>
