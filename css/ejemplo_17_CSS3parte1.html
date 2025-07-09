@@ -1,0 +1,50 @@
+<!-- ejemplo_17_CSS3parte1.html -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades CSS3 - Parte1</title>
+    <style>
+        /* Novedades CSS3 
+        Ver https://developer.mozilla.org/es/docs/Web/CSS/
+        - border-radius: bordes redondeados 
+        - box-shadow: sombra de caja 
+        - text-shadow: sombra para texto
+        - rgba: color con alpha (transparencia 0..1) 
+        - opacity: opacidad de la caja (0..1) 
+        
+        [https://developer.mozilla.org/es/docs/Web/CSS/gradient/linear-gradient]
+        - linear-gradient: gradiente lineal
+        - radial-gradient: gradiente radial
+        */
+        p {
+            border: 2px solid blue;
+            padding: 5px;
+            border-radius: 25px 10px;
+            box-shadow: -5px -5px 10px 2px red;
+            text-shadow: 2px 2px 2px green;
+            opacity: 0.5;
+        }
+
+        h1 {
+            color: rgba(0, 0, 255, 0.5);
+        }
+
+        p:first-of-type {
+            background: radial-gradient(rgb(136, 226, 226) 20%, lightsalmon 100%);
+        }
+
+        p:nth-of-type(2) {
+            background: linear-gradient(270deg, white 60%, black);
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Jean Michel Jarre</h1>
+    <p>Jean-Michel André Jarre Pejot, más conocido como Jean-Michel Jarre (Lyon, 24 de agosto de 1948), es un compositor e intérprete francés de música electrónica. Posee relevancia internacional por sus conciertos multitudinarios celebrados al aire libre. Desde su debut en 1971 ha tocado diversos estilos musicales como, entre otros, el electro-rock y el ambient.[1]​ Es hijo del destacado compositor francés de bandas sonoras Maurice Jarre. </p>
+    <p>
+        Jean-Michel André Jarre Pejot nació el 24 de agosto de 1948 en Lyon, Francia. Es hijo de la enfermera France Pejot y del destacado compositor de bandas sonoras Maurice Jarre (Doctor Zhivago, Lawrence de Arabia, Ghost y La Sociedad de los Poetas Muertos), por mencionar algunos. Sin embargo, debido al trabajo y a la posterior separación de sus padres, Jarre no fue muy influenciado por las ideas de Maurice, ya que los abandonó cuando tenía cinco años, y no lo volvería a ver hasta los diecisiete años. A esa misma edad comenzó sus primeras clases de piano, y junto a su madre frecuentaba el club de Jazz más popular de París, «Le Chat qui Pêche», donde conoció al destacado trompetista Chet Baker. 
+    </p>
+ </body>
+ </html>

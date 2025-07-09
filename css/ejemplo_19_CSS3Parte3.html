@@ -1,0 +1,40 @@
+<!-- ejemplo_19_CSS3Parte3.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        /* Novedades de CSS3: 
+        flexbox: cajas flexibles 
+        :nth-child -> Hijo N de contenedor 
+        :nth-of-type -> N tipo de elemento */
+
+        /* Primero de su tipo para cada contenedor */
+        p:nth-of-type(1) {
+            background-color: aqua;
+        }
+
+        main :nth-child(1) {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Párrafo Cabecera</p>
+    </header>
+    <main>
+        <h1>Titulo</h1>
+        <!-- Emmet: p*4{Párrafo $} -->
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+    </main>
+</body>
+
+</html>

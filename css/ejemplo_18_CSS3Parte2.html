@@ -1,0 +1,54 @@
+<!-- ejemplo_18_CSS3Parte2.html -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones y Transformaciones</title>
+    <style>
+        /* Transformaciones y Transiciones (animaciones) 
+        - scale -> Escala */
+        
+        p {
+            margin: auto;
+            margin-top: 50px;
+            border: 1px solid blue;
+            width: 20%;
+            transform: scale(2);
+            /* transform: rotate(10deg); */
+            /* transform: skew(20deg); */
+            transform: translate(30px, 20px);
+            
+        }
+
+        p:hover {
+            transform: rotate(10deg);
+        }
+
+        button {
+            margin-top: 100px;
+            background-color: aqua;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(100%, 0%, 0%, 0.5);
+            border-radius: 10px;
+        }
+
+        button:hover {
+            /* Valores de las propiedades finales */
+            background-color: bisque;
+            box-shadow: 5px 4px 6px rgba(0%, 0%, 100%, 0.5);
+            transform: translateX(100px);
+
+            /* Propiedades de la transición */
+            transition-property: background-color, transform, box-shadow ;
+            transition-duration: 2s;
+            transition-timing-function: steps(4);
+            
+        }
+    </style>
+ </head>
+ <body>
+    <p>Parrafo1</p>
+    <button>Pulsa para ver la Animación</button>
+ </body>
+ </html>

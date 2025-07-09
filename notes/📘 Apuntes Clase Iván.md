@@ -1,7 +1,7 @@
 ---
 title: "\U0001F4D8 Apuntes Clase Iván"
 created: '2025-07-02T12:29:52.741Z'
-modified: '2025-07-03T11:40:02.995Z'
+modified: '2025-07-09T10:11:06.621Z'
 ---
 
 # 📘 Apuntes Clase
@@ -243,3 +243,25 @@ Flechas: → , ← , ↑ , ↓ , ↗ , ↖ , ↘ , ↙
 - 🖥️ VMWare  
 - 🐶 Puppy Linux ISO  
   - [🔗 BookwormPup64 10.0.10](https://distro.ibiblio.org/puppylinux/puppy-bookwormpup/BookwormPup64/10.0.10/)
+
+
+## MySQL
+
+```console
+sudo apt update
+sudo apt upgrade
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
