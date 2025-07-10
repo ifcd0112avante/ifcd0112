@@ -1,0 +1,56 @@
+<!-- ejemplo_02_grid.html -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <style>
+        /* La clase de BS bg-primary equivale a esto: */
+        /* Para personalizar BS hay que usar SASS */
+        .bg-primary {
+            background-color: blue;
+        }
+
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* Al ser un selector mas especifico esto
+        sobreescribe el bg-primary del main */
+        main section:first-child{
+            background-color: brown;
+        }
+    </style>
+ </head>
+ <body>
+    <main class="container text-center bg-primary">
+        <section aria-label="fila" class="row">
+            <article aria-label="c1"  class="border col-md-12 col-lg-6 col-xl-6">
+                <p>Párrafo1</p>
+            </article>
+            <article aria-label="c2" class="border col-md-12 col-lg-6 col-xl-3">
+                <p>Párrafo2</p>
+            </article>
+            <article aria-label="c3" class="border col-md-12 col-lg-12 col-xl-3">
+                <p>Párrafo3</p>
+            </article>
+        </section>
+    </main>
+    <aside class="container text-center bg-success">
+        <section aria-label="fila-lateral" class="row">
+            <article aria-label="c1"  class="col-6">
+                <p>Párrafo1</p>
+            </article>  
+            <article aria-label="c2" class="col-6">
+                <p>Párrafo2</p>
+            </article>
+            <article aria-label="c3" class="col">
+                <p>Párrafo3</p>
+            </article>
+        </section>
+    </aside>
+ </body>
+ </html>

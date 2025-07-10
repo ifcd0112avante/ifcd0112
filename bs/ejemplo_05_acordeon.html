@@ -1,0 +1,80 @@
+<!-- ejemplo_05_acordeon.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeón</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <main class="container text-start bg-secondary border">
+        <section class="accordion" id="miacordeon" aria-label="acordeon">
+            <article class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panel1" aria-expanded="true"
+                        aria-controls="panel1">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <aside id="panel1" class="accordion-collapse collapse show">
+                    <p class="accordion-body">
+                        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </p>
+                </aside>
+            </article>
+            <article class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panel2" aria-expanded="false"
+                        aria-controls="panel2">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <aside id="panel2" class="accordion-collapse collapse">
+                    <p class="accordion-body">
+                        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </p>
+                </aside>
+            </article>
+            <article class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panel3" aria-expanded="false"
+                        aria-controls="panel3">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <aside id="panel3" class="accordion-collapse collapse">
+                    <p class="accordion-body">
+                        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </p>
+                </aside>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
