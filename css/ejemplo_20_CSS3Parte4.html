@@ -1,0 +1,36 @@
+<!-- ejemplo_20_CSS3Parte4.html -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        /* Grid Layout -> Emula una tabla */
+        main {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) ;
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+            margin: auto;
+        }
+
+        p {
+            padding: 5px;
+            border: 1px solid blue;
+        }
+    </style>
+ </head>
+ <body>
+    <main>
+        <!-- Emmet: p*6{Párrafo $} -->
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+        <p>Párrafo 5</p>
+        <p>Párrafo 6</p>
+    </main>
+ </body>
+ </html>

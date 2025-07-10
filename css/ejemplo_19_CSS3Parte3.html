@@ -9,6 +9,8 @@
     <style>
         /* Novedades de CSS3: 
         flexbox: cajas flexibles 
+        display: flex
+
         :nth-child -> Hijo N de contenedor 
         :nth-of-type -> N tipo de elemento */
 
@@ -19,6 +21,20 @@
 
         main :nth-child(1) {
             background-color: lightpink;
+        }
+
+        footer {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        footer p {
+            display: flex;
+            border: 1px solid blue;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
@@ -35,6 +51,13 @@
         <p>Párrafo 3</p>
         <p>Párrafo 4</p>
     </main>
+    <footer>
+        <p>Párrafo 1</p>
+        <p>Párrafo 2 <br>
+        Segunda línea</p>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+    </footer>
 </body>
 
 </html>

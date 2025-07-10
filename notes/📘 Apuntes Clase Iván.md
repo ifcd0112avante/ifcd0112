@@ -1,7 +1,7 @@
 ---
 title: "\U0001F4D8 Apuntes Clase Iván"
 created: '2025-07-02T12:29:52.741Z'
-modified: '2025-07-09T10:11:06.621Z'
+modified: '2025-07-09T12:09:44.374Z'
 ---
 
 # 📘 Apuntes Clase
@@ -250,7 +250,34 @@ Flechas: → , ← , ↑ , ↓ , ↗ , ↖ , ↘ , ↙
 ```console
 sudo apt update
 sudo apt upgrade
+# Instalamos el servidor y el cliente
+sudo apt install mysql-server mysql-client
+
+# Para comprobar
+sudo service mysql status
+
+# Cambiar la contraseña del root
+sudo mysql -u root
+ALTER USER 'root'@'localhost'
+IDENTIFIED WITH mysql_native_password
+BY 'admin';
+FLUSH PRIVILEGES;
 ```
+
+## Instalar Workbench
+
+```console
+cd Descargas
+wget https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community_8.0.40-1ubuntu24.04_amd64.deb
+sudo apt install ./mysql-workbench-community_8.0.40-1ubuntu24.04_amd64.deb
+```
+
+
+
+
+
+
+
 
 
 
