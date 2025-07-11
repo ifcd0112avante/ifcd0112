@@ -1,0 +1,96 @@
+<!-- ejemplo_09_model_paginacion.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla BS</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <main class="container text-center bg-secondary border p-3 m-3">
+        <!-- Botón On/off para modal -->
+        <button type="button" class="btn btn-primary" 
+        data-bs-toggle="modal" data-bs-target="#modal1">
+            Ver Modal
+        </button>
+
+        <!-- Modal 1-->
+        <dialog class="modal fade " id="modal1" tabindex="-1" 
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <nav class="modal-dialog ">
+                <section class="modal-content bg-primary text-white" aria-label="contenido-modal">
+                    <header class="modal-header">
+                        <h2 class="modal-title fs-5" id="exampleModalLabel">Titulo Modal</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </header>
+                    <article class="modal-body" aria-label="cuerpo-modal">
+                        <p>Contenido para el modal</p>
+                    </article>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-info"
+                        data-bs-target="#modal2" data-bs-toggle="modal">Llamar al 2º Modal</button>
+                    </footer>
+                </section>
+            </nav>
+        </dialog>
+
+        <!-- Modal 2-->
+        <dialog class="modal fade " id="modal2" tabindex="-1" 
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <nav class="modal-dialog ">
+                <section class="modal-content bg-primary text-white" aria-label="contenido-modal">
+                    <header class="modal-header">
+                        <h2 class="modal-title fs-5" id="ModalLabel">Modal 2</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </header>
+                    <article class="modal-body" aria-label="cuerpo-modal">
+                        <p>Contenido para el modal 2</p>
+                    </article>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-info">Guardar cambios</button>
+                    </footer>
+                </section>
+            </nav>
+        </dialog>
+    </main>
+    <footer class="container text-center .bg-light border p-3 m-3">
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+              <li class="page-item">
+                <a href="#" class="page-link">Anterior</a>
+                </li>
+              <li class="page-item">
+                <a class="page-link" href="#">1</a>
+            </li>
+              <li class="page-item active">
+                <a class="page-link" href="#" aria-current="page">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <i class="fa-solid fa-forward fa-fade"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+    </footer>
+</body>
+
+</html>
