@@ -1,0 +1,101 @@
+<!-- ejemplo_00_plantilla.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla BS</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        hr.dropdown-divider {
+            border-top: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container text-end bg-secondary border p-3 m-3">
+        <nav class="btn-group">
+            <button class="btn btn-primary text-light" type="button">
+                Provincias
+            </button>
+            <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false" type="button">
+                <span class="visually-hidden">Lista desplegable</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item text-success" href="#">Sevilla</a></li>
+                <li><a class="dropdown-item" href="#">Cádiz</a></li>
+                <li><a class="dropdown-item" href="#">Granada</a></li>
+                <li><a class="dropdown-item" href="#">Badajoz</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <header class="navbar navbar-expand-lg navbar-secondary bg-secondary text-start">
+            <nav class="container-fluid">
+                <a class="navbar-brand" href="#">Menú Hamburguesa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menudesplegable"
+                    aria-controls="menudesplegable" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="menudesplegable" aria-label="desplegable">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Provincias
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li>
+                                    <h6 class="dropdown-header">Andalucía</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sevilla</a></li>
+                                <li><a class="dropdown-item active" href="#">Granada</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h6 class="dropdown-header">Extremadura</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Badajoz</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+    </main>
+    <aside class="dropdown p-3 m-3">
+        <button type="button" class="btn btn-primary dropdown-toggle" 
+        data-bs-toggle="dropdown" aria-expanded="false"
+            data-bs-auto-close="outside">
+            Formulario Acceso
+        </button>
+        <form class="dropdown-menu p-4" action="#" method="post">
+            <section class="mb-3" aria-label="form-sec1">
+                <label for="email" class="form-label">Correo:</label>
+                <input type="email" class="form-control" id="email" 
+                placeholder="email@example.com">
+            </section>
+            <section class="mb-3" aria-label="form-sec2">
+                <label for="clave" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="clave" placeholder="Contraseña">
+            </section>
+            <section class="mb-3" aria-label="form-sec3">
+                <footer class="form-check">
+                    <input type="checkbox" class="form-check-input" id="checkbox1">
+                    <label class="form-check-label" for="checkbox1">
+                        Recuérdame
+                    </label>
+                </footer>
+            </section>
+            <button type="submit" class="btn btn-primary">Logarse!</button>
+        </form>
+    </aside>
+</body>
+
+</html>
