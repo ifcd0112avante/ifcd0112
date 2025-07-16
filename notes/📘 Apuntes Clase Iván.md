@@ -7,23 +7,45 @@ modified: '2025-07-09T12:09:44.374Z'
 # 📘 Apuntes Clase
 
 - [📘 Apuntes Clase](#-apuntes-clase)
-  - [🔀 Arranque dual](#arranque-dual)
-  - [💻 IDEs](#ides)
+  - [🔀 Arranque dual](#-arranque-dual)
+  - [💻 IDEs](#-ides)
   - [☕🖥️ Instalar Java y VSC](#️-instalar-java-y-vsc)
     - [☕ Instalar Java](#-instalar-java)
-  - [🖥️ Comandos de Consola](#comandos-de-consola)
-    - [🪟 Windows (MS-DOS/Powershell)](#windows-ms-dospowershell)
-    - [🐧 Linux](#linux)
+  - [🖥️ Comandos de Consola](#️-comandos-de-consola)
+    - [🪟 Windows (MS-DOS/Powershell)](#-windows-ms-dospowershell)
+    - [🐧 Linux](#-linux)
     - [🧑‍💻 Instalar Visual Studio Code (VSC)](#-instalar-visual-studio-code-vsc)
-  - [🔧 GIT](#git)
-    - [📋 Listado de comandos](#listado-de-comandos)
-      - [🌿 Ramas GIT](#ramas-git)
-  - [👥 Roles Proyectos](#roles-proyectos)
-  - [🌐 HTML](#html)
-    - [🏷️ Etiquetas HTML](#etiquetas-html)
-    - [⚙️ Atributos HTML](#atributos-html)
-    - [✅ Validadores HTML y CSS](#validadores-html-y-css)
-  - [📀 Virtualización](#virtualización)
+  - [🔧 GIT](#-git)
+    - [📋 Listado de comandos](#-listado-de-comandos)
+      - [🌿 Ramas GIT](#-ramas-git)
+  - [👥 Roles Proyectos](#-roles-proyectos)
+    - [🧑‍🎓 Junior (\< 2-4 años)](#-junior--2-4-años)
+    - [🧑‍💼 Senior (\> 2-4 años)](#-senior--2-4-años)
+  - [🌐 HTML](#-html)
+    - [🏷️ Etiquetas HTML](#️-etiquetas-html)
+    - [⚙️ Atributos HTML](#️-atributos-html)
+    - [✅ Validadores HTML y CSS](#-validadores-html-y-css)
+  - [CSS](#css)
+    - [Incluir CSS](#incluir-css)
+  - [🎯 Selectores y Estructura](#-selectores-y-estructura)
+  - [🎨 Colores y Fondo](#-colores-y-fondo)
+  - [🧱 Modelo de Caja (Box Model)](#-modelo-de-caja-box-model)
+  - [🔡 Tipografía](#-tipografía)
+  - [📐 Unidades](#-unidades)
+  - [📦 Visualización y Visibilidad](#-visualización-y-visibilidad)
+  - [📌 Posicionamiento](#-posicionamiento)
+  - [🎨 Estilo y Tipografía](#-estilo-y-tipografía)
+  - [✍️ Propiedades de Texto](#️-propiedades-de-texto)
+  - [🔗 Enlaces y Listas](#-enlaces-y-listas)
+  - [🗃️ Tablas](#️-tablas)
+  - [📝 Formularios](#-formularios)
+  - [🌈 Novedades CSS3 - Parte 1](#-novedades-css3---parte-1)
+  - [🎬 Novedades CSS3 - Parte 2](#-novedades-css3---parte-2)
+  - [📦 Novedades CSS3 - Parte 3](#-novedades-css3---parte-3)
+  - [🧱 Novedades CSS3 - Parte 4](#-novedades-css3---parte-4)
+  - [📀 Virtualización](#-virtualización)
+  - [MySQL](#mysql)
+  - [Instalar Workbench](#instalar-workbench)
 
 ---
 
@@ -153,11 +175,11 @@ Flechas: → , ← , ↑ , ↓ , ↗ , ↖ , ↘ , ↙
     - `del` → (3) tachado  
     - `span`→ (3) fragmento texto 
   - `blockquote` → (2) Cita
-    - `sup` → (3) Superindice
-    - `sub`→ (3) subindice
+  - `sup` → (3) Superindice
+  - `sub`→ (3) subindice
   - `abbr` → (2) Abreviatura 
   - `dfn` → (2) Lista definición 
-    - `br`→ (3) Salto de líbea 
+    - `br`→ (3) Salto de línea 
   - `pre` → (2) Texto preformateado
   - `code` → (2) Código
 
@@ -176,6 +198,13 @@ Flechas: → , ← , ↑ , ↓ , ↗ , ↖ , ↘ , ↙
 </ul>
 ```
 
+Ejemplo de imagen convertida en enlace
+```code
+<a>
+  <img>
+</a>
+```
+
 - `img` → (2) Imagen
 - `map` → (2) Mapa de imágenes
   - `area` → (3) Área (Circulo, polígono, rectángulo) 
@@ -190,16 +219,17 @@ Flechas: → , ← , ↑ , ↓ , ↗ , ↖ , ↘ , ↙
       - `td`→ (4-5) Celda
  
 - `form` → (2) Formulario 
-  (Post|Get), encriptado o por URL
+  (Method: Post|Get), encriptado o por URL
   - `fieldset`→ (3) Recuadro
     - `legend` → (4) Titulo recuadro
-    - `label`→ (4) Etiqueta de campo
+    - `label`→ (4) Etiqueta de campo (enlace for->id)
     - `input`→ (4) Campo
     - `textarea` → (4) Área de texto 
-  - Tipos Inputs: text, password, date, number, email, tel, submit, reset  
+  - Tipos Inputs: text, password, date, number, email, tel, submit, reset, color, radio, checkbox, range  
   - Atributos: required, placeholder, value, min, max  
 
 > Etiquetas semánticas. Resto de etiquetas aumentan un nivel...
+> NO puede haber 2 etiquetas semanticas iguales a distintos niveles seguidos ej. section... section
 - `header` → (2) Cabecera de página
 - `nav` → (2) Navegación
 - `main` → (2) Zona principal
@@ -214,7 +244,7 @@ Flechas: → , ← , ↑ , ↓ , ↗ , ↖ , ↘ , ↙
 ### ⚙️ Atributos HTML
 - `id` → identificador único  
 - `class` → clase reutilizable  
-- `style` → CSS inline  
+- `style` → CSS en línea  
 
 ### ✅ Validadores HTML y CSS
 - HTML → [https://validator.w3.org/](https://validator.w3.org/)  
@@ -231,6 +261,182 @@ Flechas: → , ← , ↑ , ↓ , ↗ , ↖ , ↘ , ↙
 2. CSS en la cabecera (style)
 3. CSS externo (link)
 - `footer` → (2) pie
+
+## 🎯 Selectores y Estructura
+
+- `*` → Selector universal  
+- `p`, `h1`, `span`, `section` → Selectores por etiqueta (,)  
+- `.clase`, `#id` → Selectores por clase e ID  
+- `p a` → Selector descendente  (espacio en blanco)
+- `p > a` → Selector hijo  (>)
+- `p + p a` → Selector hermano adyacente  (+)
+- `[atributo=valor]` → Selector por atributo y/o valor
+
+---
+
+## 🎨 Colores y Fondo
+
+- `color`  -> Color de la fuente
+- `background-color`  -> Color de fondo
+- `background-image`  -> Imagen de fondo
+- `background-size`  -> Tamaño de fondo
+- `background-repeat`  -> Repetición fondo (trama, imagen)
+- `background-position`  ->Posición base
+- `background-attachment`  -> Scroll,fixed
+(NO ENTRA)
+- `background-clip` ✅ CSS3  -> Hasta donde llega el fondo 
+- `background-blend-mode` ✅ CSS3  -> Aplica efectos al fondo
+
+---
+
+## 🧱 Modelo de Caja (Box Model)
+
+- `margin`, `margin-top`, `margin-bottom`, `margin-left`, `margin-right`  -> márgenes
+- `padding`, `padding-top`, `padding-bottom`, `padding-left`, `padding-right`  -> rellenos
+- `border`, `border-style`, `border-width`, `border-color` -> bordes 
+- `width` -> Ancho
+- `height`  -> Alto
+
+---
+
+## 🔡 Tipografía
+
+- `font-family`  
+- `font-size`  
+- `text-decoration`  
+
+---
+
+## 📐 Unidades
+
+- `em`, `ex`, `px`, `%`  -> Relativas
+- `mm`, `pt`, `pc`  -> absolutas
+
+---
+
+## 📦 Visualización y Visibilidad
+
+- `display`  
+- `visibility`  
+
+---
+
+## 📌 Posicionamiento
+
+- `position: static`  -> por defecto, flujo normal
+- `position: relative`  -> Posicionas respecto al static
+- `position: absolute`  -> Sales del flujo; posición respecto a su contenedor
+- `position: fixed`  -> respecto a la ventana, Fijo
+- `float`  -> flotante (left |right)
+- `top`, `bottom`, `left`, `right`  -> Propiedades de traslado de coordenadas
+- `z-index`  -> Capas
+- `overflow`  -> Desbordamientos
+
+---
+ 
+## 🎨 Estilo y Tipografía
+
+- `color` → Color de fuente  
+- `font-family` → Fuente  (Arial, Verdana, courier)
+- `@font-face` → Importar fuente personalizada  
+- `font-weight` → Negrita (800/bold)
+- `font-style` → Cursiva  
+- `font-variant` → Versalitas (small-caps) 
+- `font` → Shorthand para definir fuente completa  
+
+---
+
+## ✍️ Propiedades de Texto
+
+- `text-align` → Alineación del texto  
+- `line-height` → Interlineado  
+- `text-decoration` → Subrayado, tachado  
+- `text-transform` → Mayúsculas, minúsculas  
+- `vertical-align` → Alineación vertical  
+- `text-indent` → Sangría  
+- `letter-spacing` → Espaciado entre letras  
+- `word-spacing` → Espaciado entre palabras  
+- `white-space` → Espacios en blanco  
+- Pseudoelementos
+  - `::first-line` -> Sangría de primera línea
+  - `::first-letter` →  Letra Capital
+
+---
+
+## 🔗 Enlaces y Listas
+
+Pseudoclases:
+- `:link` -> Enlace NO visitado
+- `:visited` -> Enlace visitado
+- `:hover` -> Ratón por encima del elemento
+- `:active` → Clic en el elemento
+
+Listas: 
+- `list-style-type` → Tipo de viñeta  
+- `list-style-position` → Posición de la viñeta  
+- `list-style-image` → Imagen como viñeta  
+
+---
+
+## 🗃️ Tablas
+
+- `border-collapse` → Separación entre celdas  
+- `border-spacing` → Espaciado entre celdas  
+- `caption-side` → Posición del título de la tabla  
+- `empty-cells` → Mostrar u ocultar celdas vacías  
+
+---
+
+## 📝 Formularios
+
+- `display: inline-block` → Elemento en línea con comportamiento de bloque  
+- `border-radius` → Bordes redondeados (CSS3)  
+- `::placeholder` → Estilo del texto de sugerencia  
+- `:focus` → Estilo al enfocar el input  
+
+---
+
+## 🌈 Novedades CSS3 - Parte 1
+
+- `border-radius` → Bordes redondeados  
+- `box-shadow` → Sombra de caja  
+- `text-shadow` → Sombra de texto  
+- `rgba()` → Colores con transparencia  
+- `opacity` → Opacidad  
+- `linear-gradient` → Fondo gradiente lineal
+- `radial-gradient` → Fondo gradiente radial
+
+---
+
+## 🎬 Novedades CSS3 - Parte 2
+
+- `transform` → Transformaciones (`scale`, `rotate`, `skew`, `translate`)  
+- `transition-property` → Propiedades afectadas por transición  
+- `transition-duration` → Duración  
+- `transition-delay` → Retraso transición
+- `transition-timing-function` → Curva de transición  
+
+---
+
+## 📦 Novedades CSS3 - Parte 3
+
+
+- `display: flex` → Contenedor flexible (Flexbox)  
+- `justify-content`, 
+- `align-items` → Alineación en flex  
+Nuevos selectores (Ej19)
+- `:nth-child` -> Selector N hijo
+- `:nth-of-type` → Selector N de tipo 
+
+---
+
+## 🧱 Novedades CSS3 - Parte 4
+
+- `display: grid` → Diseño en cuadrícula (Grid Layout)  
+- `grid-template-columns`, 
+- `grid-template-rows` → Definir estructura  
+- `gap` → Separación entre celdas  
+
 
 
 ---
