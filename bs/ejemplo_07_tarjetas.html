@@ -1,0 +1,100 @@
+<!-- ejemplo_00_plantilla.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla BS</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <main class="container text-center bg-secondary border p-3 m-3
+    d-flex justify-content-center flex-wrap gap-3">
+        <article class="card" style="width: 18rem;" aria-label="tarjeta1">
+            <img src="img/jean-michel-jarre-sevilla1.webp" class="card-img-top" alt="JMJ1">
+            <section class="card-body" aria-label="cuerpo-lista">
+                <h5 class="card-title">Jean Michel Jarre</h5>
+                <p class="card-text">JMJ en el concierto de Sevilla en 2025</p>
+            </section>
+            <h2 class="card-header">Canciones primera parte</h2>
+            <ul class="list-group list-group-flush text-end">
+                <li class="list-group-item">Oxygene</li>
+                <li class="list-group-item">Magentic Fields</li>
+                <li class="list-group-item">Zoologique</li>
+            </ul>
+            <section class="card-body" aria-label="cuerpo-enlaces">
+                <a href="#" class="card-link">Página JMJ</a>
+                <a href="#" class="btn btn-primary">Iconica Fest</a>
+            </section>
+        </article>
+        <article class="card" style="width: 18rem;" aria-label="tarjeta2">
+            <img src="img/jean-michel-jarre-sevilla2.webp" class="card-img-top" alt="...">
+            <section class="card-body" aria-label="cuerpo-lista">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+            </section>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            <section class="card-body" aria-label="cuerpo-enlaces">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <article class="card text-center" aria-label="tarjetas-pestañas">
+            <nav class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="tab">
+                    <li class="nav-item">
+                        <a class="nav-link" id="pestaña1"
+                        data-bs-toggle="tab" href="#p1">Pestaña1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="true" id="pestaña2"
+                        data-bs-toggle="tab" href="#p2">Pestaña2</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+                        <a class="nav-link" id="pestaña3"
+                        data-bs-toggle="tab" href="#p3">Pestaña3</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="card-body tab-content" aria-label="cuerpo-pestañas">
+                <article aria-label="pestaña1" class="tab-pane fade"
+                id="p1" aria-labelledby="pestaña1">
+                    <h5 class="card-title">Contenido Pestaña1</h5>
+                    <p class="card-text">Párrafo con la pestaña1</p>
+                    <a href="#" class="btn btn-primary">Enlace1</a>
+                </article>
+                <article aria-label="pestaña2" class="tab-pane fade"
+                id="p2" aria-labelledby="pestaña2">
+                    <h5 class="card-title">Contenido Pestaña2</h5>
+                    <p class="card-text">Párrafo con la pestaña2</p>
+                    <a href="#" class="btn btn-primary">Enlace2</a>
+                </article>
+                <article aria-label="pestaña3" class="tab-pane fade"
+                id="p3" aria-labelledby="pestaña3">
+                    <h5 class="card-title">Contenido Pestaña3</h5>
+                    <p class="card-text">Párrafo con la pestaña3</p>
+                    <a href="#" class="btn btn-primary">Enlace3</a>
+                </article>
+            </section>
+        </article>
+    </footer>
+</body>
+
+</html>
