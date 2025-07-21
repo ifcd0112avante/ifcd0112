@@ -1,5 +1,7 @@
 package codJava.ej09;
 
+import java.util.Scanner;
+
 public class ejemplo_09_condicional_switch {
     public static void main(String[] args) {
         System.out.println("-- CAFETERIA AVANTE -- \n" + 
@@ -9,6 +11,11 @@ public class ejemplo_09_condicional_switch {
                            "-- 4. Agua 💧");
         
         int opcion = 3;
+
+        // Si queremos interacción
+        Scanner sc = new Scanner(System.in);
+        opcion = sc.nextInt();
+        sc.close();
 
         // if anidado. OJO! Es poco eficiente
         if (opcion ==1) {
@@ -49,5 +56,7 @@ public class ejemplo_09_condicional_switch {
             default -> " ❌ Opción incorrecta";
         };
         System.out.println(mensaje);
+
+        
     }
 }
