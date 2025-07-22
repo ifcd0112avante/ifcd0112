@@ -33,12 +33,14 @@ class Persona {
     String nombre;
     int edad;
     boolean genero;
-    // El constructor
+
+    // El constructor por defecto
     Persona () {
         this.nombre = "Iván";
         this.edad = 49;
         this.genero = false;
     }
+
     // Defino un método (imprimir)
     public void imprimirDatos () {
         System.out.println("Nombre: " + nombre);
