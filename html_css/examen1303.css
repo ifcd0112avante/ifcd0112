@@ -1,0 +1,190 @@
+/* GENERALES */
+/* 01. */
+@font-face {
+    font-family: Montserrat;
+    src: url('Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+/* 02. */
+body {
+    font-family: Montserrat;
+}
+
+/* ------- Lateal Izquierdo ------- */
+/* 03. */
+body > aside {
+    background: linear-gradient(to right, lightgrey , white);
+}
+
+/* 04. */
+body > aside {
+    position: absolute;
+    width: 20%;
+    top: 2%;
+    left: 2%;
+}
+
+/* 05. */
+body > aside > figure > img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* 06. */
+body > aside > ul {
+    list-style: none;
+    line-height: 1.125em;
+    font-size: 0.8em;
+    margin-left: -10px;
+    color:  #0645AD;
+}
+
+/* 07. */
+/* body > aside > ul > li:first-of-type */
+/* body > aside > ul > li:nth-of-type(1) */
+/* body > aside > ul :first-child */
+body > aside > ul :nth-child(1) {
+    text-shadow: blue 1px 1px 1px;
+}
+
+/* 08. */
+/*body > aside > ul > li + li */
+body > aside > ul > :not(li:nth-of-type(1))   {
+    text-indent: 10px;
+}
+
+/* 09. */
+body > aside h2 {
+    color: rgb(30%, 30%, 30%);  /* darkgrey */
+    font-size: 1.1em;
+    margin-left: 10px;
+    font-variant: small-caps;
+}
+
+/* --------------------------------------------------- */
+/* ------- PRINCIPAL ------- */
+/* 10. */
+main {
+    background-color: white;
+    position: absolute;
+    width: 70%;
+    top: 2%;
+    left: 25%;
+}
+
+/* 11. */
+/* radial-gradient -> ellipse at top 
+lineal-gradient -> to top */
+main > header {
+    background: radial-gradient(ellipse at top,
+     lightgrey, white);
+     overflow: hidden;
+}
+
+/* 12. */
+main > header ul {
+    float: left;
+    width: 40%;
+    padding: 10px;
+}
+
+/* 13. */
+main > header ul li {
+    list-style: none;
+    display: inline;
+}
+
+/* 14. */
+main > header form {
+    width: 55%;
+    float: right;
+}
+
+/* 15. */
+/* .fa { } */
+
+/* 16. */
+/* .form-control { } */
+main > header form {
+    margin-top: 15px;
+}
+
+/* 17. */
+main > header form input[type="submit"] {
+    border: 1px solid blue;
+    margin-left: 5px;
+}
+/* --------------------------------------------------- */
+/* ------- SECCIÓN PRINCIPAL ------- */
+/* 18. */
+main section figure img {
+    width: 90%;
+}
+/* 19. */
+main section figure img:hover {
+    visibility: hidden;
+}
+
+/* 20. */
+main section {
+    width: 60%;
+    float: left;
+}
+
+/* 21. */
+main aside {
+    float: right;
+    width: 35%;
+}
+
+/* 22. */
+main section p {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    padding-right: 20px;
+    text-align: justify;
+    text-indent: 10%;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+/* --------------------------------------------------- */
+/* ------- LISTA MAIN ------- */
+/* 23. */
+main section > ol {
+    background: linear-gradient(to bottom, lightgrey, white);
+    font-size: 0.8em;
+    width: 70%;
+    margin: auto;
+}
+
+main section ol {
+    list-style: none;
+}
+
+/* 24. */
+main section ol ol ol li {
+    font-weight: bold;
+}
+
+/* 25. */
+/* 26. */
+/* --------------------------------------------------- */
+/* ------- TABLA MAIN ------- */
+/* 27. */
+main table caption {
+    caption-side: top;
+}
+main table caption:hover {
+    box-shadow: 2px 2px 2px darkgray;
+}
+
+table th, table td {
+    border: 1px solid grey;
+}
+/* --------------------------------------------------- */
+/* ------- TABLA LATERAL --------*/
+
+/* --------------------------------------------------- */
+/* ------- PIE DE PÁGINA --------*/
+
