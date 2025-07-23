@@ -169,22 +169,103 @@ main section ol ol ol li {
 
 /* 25. */
 /* 26. */
+
+
 /* --------------------------------------------------- */
 /* ------- TABLA MAIN ------- */
 /* 27. */
-main table caption {
+main section table caption {
     caption-side: top;
 }
-main table caption:hover {
+main section table caption:hover {
     box-shadow: 2px 2px 2px darkgray;
 }
 
-table th, table td {
+/* 28. */
+main section table caption {
+    font-size: 0.85em;
+}
+
+/* 29. */
+main section table:active {
+    width: 110%;
+    margin: 40px 0px;
+}
+
+/* 30. */
+main section table,
+main section table th,
+main section table td {
     border: 1px solid grey;
 }
+
+/* 31. */
+main section table th,
+main section table td {
+    padding: 6px;
+}
+
+/* 32. */
+main section table td[rowspan] {
+    color: red;
+}
+
 /* --------------------------------------------------- */
 /* ------- TABLA LATERAL --------*/
+/* 33. */
+main aside h2 {
+    margin-top: 20px;
+    font-variant: small-caps;
+    font-size: 3em;
+    padding: 15px;
+    /* border-top-color: lightgray;
+    border-bottom-color: lightgray;
+    border-right-color: darkgrey;
+    border-left-color: darkgrey; */
+    border-color: lightgray darkgrey lightgray darkgrey;
+    border-style: double;
+    border-width: 5px;
+}
+
+/* 34. */
+main aside h2 {
+    border-radius: 10px/40px;
+}
+
+/* 35. */
+main aside table p {
+    background-image: url("Picto_infobox_map.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 60px;
+}
+
+/* 36. */
+main aside table caption {
+    width: 240px;
+    height: 100px;
+    overflow: scroll;
+    background: linear-gradient(to bottom, lightgray, white);
+}
+
 
 /* --------------------------------------------------- */
 /* ------- PIE DE PÁGINA --------*/
+/* 37. */
+body > footer {
+    margin: 20px 0px;
+    position: absolute;
+    left: 30%;
+    top: 180%;
+    width: 60%;
+    font-size: 1em;
+}
 
+/* 38. */
+body > footer:active {
+    transition-property: width, font-size;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+    width: 100%;
+    font-size: 1.5em;
+}
